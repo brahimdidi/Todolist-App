@@ -1,0 +1,72 @@
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(153, 150, 150);
+}
+
+.container {
+  width: 400px;
+  display: grid;
+}
+
+.input-div {
+  display: flex;
+  width: 400px;
+  height: 30px;
+}
+
+#input-field {
+  width: 370px;
+}
+
+#add-btn {
+  width: 30px;
+  cursor: pointer;
+}
+
+.todo-list {
+  width: 400px;
+  height: 40px;
+}
+
+.div-active {
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+  border: 1px solid rgb(0, 0, 0);
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.checkbox {
+  position: fixed;
+  left: 6px;
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.clearAll {
+  width: 400px;
+  height: 50px;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  background-color: white;
+  padding: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dis-none {
+  display: none;
+}
+
+.warn {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(36, 29, 29);
+}
