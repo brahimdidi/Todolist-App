@@ -2,7 +2,7 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> To do list project
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,13 +10,13 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
+- Major languages ##css
+- Frameworks ##webpack
 - Technologies used
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://brahimdidi.github.io/Todolist-App/)
 
 
 ## Getting Started
@@ -28,10 +28,12 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+none
 
 ### Setup
 
 ### Install
+clone the repo
 
 ### Usage
 
@@ -48,6 +50,7 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+brahim didi
 
 👤 **Author2**
 
