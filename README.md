@@ -4,7 +4,7 @@
 
 > To do list project,In this project you can save you wishing to do list.
 
-![screenshot](./app_screenshot.png)
+![screenshot](projectImage.jpeg)
 
 Additional description about the project and its features.
 
