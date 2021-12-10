@@ -12,7 +12,7 @@ body {
 .input-div {
   display: flex;
   width: 400px;
-  height: 30px;
+  height: 40px;
 }
 
 #input-field {
@@ -22,6 +22,13 @@ body {
 #add-btn {
   width: 30px;
   cursor: pointer;
+}
+
+#add-btn:hover {
+  background-color: greenyellow;
+  width: 50px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
 
 .todo-list {
@@ -36,6 +43,11 @@ body {
   border: 1px solid rgb(0, 0, 0);
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.div-active:hover {
+  background-color: aqua;
+  transition: 0.4s ease-in-out;
 }
 
 .checkbox {
@@ -61,6 +73,13 @@ body {
   cursor: pointer;
 }
 
+.clearAll:hover {
+  background-color: brown;
+  font-size: 30px;
+  height: 65px;
+  transition: 0.4s ease-in-out;
+}
+
 .dis-none {
   display: none;
 }
@@ -69,4 +88,5 @@ body {
   font-size: 15px;
   font-weight: 300;
   color: rgb(36, 29, 29);
+  background-color: red;
 }

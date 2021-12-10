@@ -2,7 +2,7 @@
 
 # Project Name
 
-> To do list project
+> To do list project,In this project you can save you wishing to do list.
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,9 +10,9 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages ##css
-- Frameworks ##webpack
-- Technologies used
+- Major languages ##css html js
+- Frameworks ##vscode
+- Technologies used webpack
 
 ## Live Demo
 
@@ -33,7 +33,8 @@ none
 ### Setup
 
 ### Install
-clone the repo
+clone the repo, open it with your code editor 
+suggested vscode browse the web.
 
 ### Usage
 
@@ -41,7 +42,7 @@ clone the repo
 
 ### Deployment
 
-
+you can see the live demo up.
 
 ## Authors
 
