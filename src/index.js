@@ -1,65 +1,29 @@
 import './style.css';
 
-const addBtn = document.querySelector('#add-btn');
-const todoList = document.querySelector('.todo-list');
-const inputField = document.querySelector('#input-field');
-const clearAll = document.querySelector('.clearAll');
+import refresher from './refresher.js';
+import form from './form-inputs.js';
+import taskContainer from './new-task.js';
+import clearButton from './clear-task.js';
+import Task from './task-adder';
+
+const ul = document.createElement('ul');
+ul.classList.add('task-list', 'dc');
+
 const container = document.querySelector('.container');
-const inputDiv = document.querySelector('.input-div');
+container.appendChild(refresher());
+container.appendChild(form());
+container.appendChild(ul);
+container.appendChild(clearButton());
 
-const todoListArray = [
-  {
-    description: 'none',
-    completed: false,
-    index: 0,
-  },
-];
+const body = document.querySelector('body');
+body.appendChild(container);
 
-const addNew = () => {
-  if (inputField.value === '') {
-    const warn = document.createElement('h2');
-    warn.classList.add('warn');
-    warn.innerHTML = 'Please type something';
-    container.insertBefore(warn, inputDiv);
-    setTimeout(() => warn.remove(), 1000);
-  } else {
-    const div = document.createElement('div');
-    div.classList.add('div-active');
-    div.innerHTML = inputField.value;
-    todoList.insertBefore(div, clearAll);
-    inputField.value = '';
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    div.appendChild(checkbox);
-    checkbox.classList.add('checkbox');
-    const checked = () => {
-      if (checkbox.checked === false) {
-        checkbox.parentElement.classList.remove('line-through');
-      } else {
-        checkbox.parentElement.classList.add('line-through');
-      }
-    };
-    checkbox.addEventListener('click', checked);
-    clearAll.classList.remove('dis-none');
-    const todo = {
-      description: inputField.value,
-      completed: checkbox.checked,
-      index: 0,
-    };
-    todoListArray.push(todo);
-  }
-};
-const removeItems = () => {
-  const toRemove = document.querySelectorAll('.line-through');
-  toRemove.forEach((r) => {
-    r.remove();
-  });
-};
+const myTasks = [];
+myTasks.push(new Task('bamo', false, 0));
+myTasks.push(new Task('new', false, 1));
+myTasks.push(new Task('book', false, 2));
+myTasks.push(new Task('added', false, 3));
 
-addBtn.addEventListener('click', addNew);
-clearAll.addEventListener('click', removeItems);
-inputField.addEventListener('keypress', (event) => {
-  if (event.key === 'Enter') {
-    addNew();
-  }
+myTasks.forEach((task) => {
+  ul.appendChild(taskContainer(task));
 });

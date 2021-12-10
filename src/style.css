@@ -1,92 +1,94 @@
-body {
-  align-items: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.di {
+  display: flex;
   justify-content: center;
-  background-color: rgb(153, 150, 150);
+}
+
+.dc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btm-bdr {
+  border-bottom: 1px solid rgb(163, 75, 75) !important;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(20, 17, 17);
+  padding: 50px 30px;
 }
 
 .container {
-  width: 400px;
-  display: grid;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  justify-content: initial;
+  background: rgb(77, 61, 61);
+  box-shadow: 0 0 1px 3px rgb(109, 107, 107);
 }
 
-.input-div {
-  display: flex;
-  width: 400px;
-  height: 40px;
+.refresher {
+  justify-content: space-between;
+  padding: 20px 15px;
+  width: 100%;
+  color: cadetblue;
 }
 
-#input-field {
-  width: 370px;
+.form {
+  width: 100%;
+  height: auto;
 }
 
-#add-btn {
-  width: 30px;
-  cursor: pointer;
+.fa,
+.fas {
+  color: rgba(41, 29, 14, 0.692);
 }
 
-#add-btn:hover {
-  background-color: greenyellow;
-  width: 50px;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
+.text-input {
+  width: 100%;
+  padding: 20px 15px;
+  border: none;
+  color: cadetblue;
+  outline: none;
 }
 
-.todo-list {
-  width: 400px;
-  height: 40px;
+.task-list {
+  width: 100%;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.div-active {
-  background-color: white;
-  padding: 20px;
-  font-size: 24px;
-  border: 1px solid rgb(0, 0, 0);
-  align-items: center;
-  font-family: 'Times New Roman', Times, serif;
+.task-container {
+  width: 100%;
+  justify-content: start;
+  padding: 20px 15px;
 }
 
-.div-active:hover {
-  background-color: aqua;
-  transition: 0.4s ease-in-out;
+.task-container p {
+  margin-left: 15px;
+  margin-right: auto;
+  color: rgb(0, 136, 255);
 }
 
-.checkbox {
-  position: fixed;
-  left: 6px;
-  cursor: pointer;
+.clear-button {
+  width: 100%;
+  border: 1px solid rgb(168, 166, 166);
+  padding: 20px 15px;
+  color: rgb(255, 0, 0);
+  transition: all 0.3s ease-in-out;
 }
 
-.line-through {
-  text-decoration: line-through;
-}
-
-.clearAll {
-  width: 400px;
-  height: 50px;
-  text-decoration: underline;
-  display: flex;
-  align-items: center;
-  font-size: 22px;
-  background-color: white;
-  padding: 20px;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.clearAll:hover {
-  background-color: brown;
-  font-size: 30px;
-  height: 65px;
-  transition: 0.4s ease-in-out;
-}
-
-.dis-none {
-  display: none;
-}
-
-.warn {
-  font-size: 15px;
-  font-weight: 300;
-  color: rgb(36, 29, 29);
+.clear-button:hover {
+  color: #fff;
   background-color: red;
 }
