@@ -37,6 +37,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "lighthouse": "^9.1.0",
     "lodash": "^4.17.21"
   }
 }
