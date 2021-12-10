@@ -1,92 +1,120 @@
 body {
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(153, 150, 150);
+  background-color: rgb(241, 240, 240);
 }
 
-.container {
-  width: 400px;
-  display: grid;
-}
-
-.input-div {
+main {
   display: flex;
-  width: 400px;
-  height: 40px;
-}
-
-#input-field {
-  width: 370px;
-}
-
-#add-btn {
-  width: 30px;
-  cursor: pointer;
-}
-
-#add-btn:hover {
-  background-color: greenyellow;
-  width: 50px;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
-}
-
-.todo-list {
-  width: 400px;
-  height: 40px;
-}
-
-.div-active {
-  background-color: white;
-  padding: 20px;
-  font-size: 24px;
-  border: 1px solid rgb(0, 0, 0);
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-family: 'Times New Roman', Times, serif;
+  align-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
 }
 
-.div-active:hover {
-  background-color: aqua;
-  transition: 0.4s ease-in-out;
+header {
+  margin: 0;
+  padding: 0;
+  width: 31.25rem;
+  margin-top: 20%;
 }
 
-.checkbox {
-  position: fixed;
-  left: 6px;
-  cursor: pointer;
+h3 {
+  margin: 0;
+  padding: 0;
+  width: 31.25rem;
+  height: 3.5rem;
+  border-bottom: solid;
+  border-color: rgb(156, 156, 156);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background-color: black;
+  gap: 50%;
+  color: rgb(36, 36, 36);
 }
 
-.line-through {
-  text-decoration: line-through;
+::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
-.clearAll {
-  width: 400px;
-  height: 50px;
-  text-decoration: underline;
+#formation {
+  width: 31.25rem;
+  border: none;
+  border-color: rgb(250, 249, 249);
+}
+
+.btn-container {
+  width: 31.25rem;
+}
+
+#btn {
+  margin: 0;
+  padding: 0;
+  height: 3.5rem;
+  background-color: rgb(226, 225, 225);
+  color: rgb(92, 91, 91);
+  border: none;
+  width: 31.25rem;
+  font-size: 1.5rem;
+}
+
+ul {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ul li {
+  height: 3.5rem;
+  width: 31.25rem;
+  border-style: solid;
+  border-bottom: 0.125rem;
+  border-color: rgb(156, 156, 156);
   display: flex;
   align-items: center;
-  font-size: 22px;
-  background-color: white;
-  padding: 20px;
-  justify-content: center;
-  cursor: pointer;
+  justify-content: space-around;
+  border-right: none;
 }
 
-.clearAll:hover {
-  background-color: brown;
-  font-size: 30px;
-  height: 65px;
-  transition: 0.4s ease-in-out;
+.liststyle {
+  border-bottom: 0.125rem rgb(95, 95, 95);
+  border-left: white;
 }
 
-.dis-none {
-  display: none;
+.user {
+  display: flex;
+  gap: 0%;
+  width: 31.25rem;
+  height: 3.5rem;
+  border-bottom: solid;
+  border-bottom: 1px;
+  border-left: none;
+  border-right: none;
+  background-color: #fff;
 }
 
-.warn {
-  font-size: 15px;
-  font-weight: 300;
-  color: rgb(36, 29, 29);
-  background-color: red;
+#userInput {
+  width: 31.25rem;
+  display: flex;
+  height: 3.5rem;
+  border: none;
+}
+
+.check {
+  height: 20px;
+  width: 20px;
+  justify-self: center;
+}
+
+.fa-ellipsis-v {
+  float: right;
+}
+
+.fa-level-down-alt {
+  margin-right: 3.25rem;
 }
