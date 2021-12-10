@@ -25,6 +25,7 @@ body {
   height: 100vh;
   background: rgb(20, 17, 17);
   padding: 50px 30px;
+  border: 1px solid black;
 }
 
 .container {
