@@ -2,21 +2,21 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> To do list project,In this project you can save you wishing to do list.
 
-![screenshot](./app_screenshot.png)
+![screenshot](projectImage.jpeg)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages ##css html js
+- Frameworks ##vscode
+- Technologies used webpack
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://brahimdidi.github.io/Todolist-App/dist/index.html)
 
 
 ## Getting Started
@@ -28,10 +28,13 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+none
 
 ### Setup
 
 ### Install
+clone the repo, open it with your code editor 
+suggested vscode browse the web.
 
 ### Usage
 
@@ -39,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-
+you can see the live demo up.
 
 ## Authors
 
@@ -48,6 +51,7 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+brahim didi
 
 👤 **Author2**
 
