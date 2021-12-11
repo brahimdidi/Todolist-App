@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>MY Todo list</title>
+      rel="stylesheet">
+    <title>To do list App</title>
   <script defer src="bundle.js"></script></head>
-  <body>
-    <main>
-      <header>
-        <div class="today-class">
-          <h3>Today's To Do <i class="fas fa-sync-alt"></i></h3>
-        </div>
+  <body class="di">
+    <main id="app" class="myapp dc">
+      <header class="header di btm-bdr">
+        <h1>Today's Things To Do</h1>
+        <i class="fas fa-sync-alt"></i>
       </header>
-      <form action="/" id="formation">
-        <div class="user">
-          <input type="text" id="userInput" placeholder="Add your list..." />
-          <i class="fas fa-level-down-alt fa-rotate-90"></i>
-        </div>
+      <form class="form di btm-bdr" id="form">
+        <input type="text" id="input" placeholder="Add to your list..." autocomplete="off" class="input"
+        />
+        <button type="submit" title="update">
+          ↵
+        </button>
       </form>
-      <div class="container">
-        <ul id="licontainer"></ul>
-      </div>
-      <div class="btn-container">
-        <button type="button" id="btn">Clear all completed</button>
-      </div>
+      <ul id="list" class="list btm-bdr"></ul>
+      <footer class="footer-last">
+        <button class="clearbtn di" type="button" id="clear-btn">
+          Clear all completed
+        </button>
+      </footer>
     </main>
-    <script src="index.js"></script>
   </body>
 </html>
