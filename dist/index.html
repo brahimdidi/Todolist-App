@@ -6,27 +6,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       crossorigin="anonymous"
       rel="stylesheet">
-    <title>To do list App</title>
+    <title>Brhaim Todo  App</title>
   <script defer src="bundle.js"></script></head>
   <body class="di">
-    <main id="app" class="myapp dc">
-      <header class="header di btm-bdr">
-        <h1>Today's Things To Do</h1>
-        <i class="fas fa-sync-alt"></i>
-      </header>
-      <form class="form di btm-bdr" id="form">
-        <input type="text" id="input" placeholder="Add to your list..." autocomplete="off" class="input"
-        />
-        <button type="submit" title="update">
-          ↵
-        </button>
-      </form>
-      <ul id="list" class="list btm-bdr"></ul>
-      <footer class="footer-last">
-        <button class="clearbtn di" type="button" id="clear-btn">
-          Clear all completed
-        </button>
-      </footer>
+    <main class="wrapper dc">
+      <div class="card dc">
+        <h1 class="task-title di btm-bdr">
+          To Do list
+        </h1>
+        <form class="form btm-bdr">
+          <input type="text" id="input-task" class="input-list" placeholder="add new" title="oress Enter to add"/>
+        </form>
+        <ul class="list-group list-group-flush task-list" id="task-list"></ul>
+        <footer>
+          <button id="clear-all-task" class="delete-all-task dc">
+            Clear completed tasks
+          </button>
+        </footer>
+      </div>
     </main>
   </body>
 </html>
