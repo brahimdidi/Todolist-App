@@ -1,6 +1,6 @@
 let target;
 
-function sorting(source, target) {
+const sorting = (source, target) => {
   const savedList = JSON.parse(localStorage.getItem('savedList'));
   if (savedList.length < 2) return;
 
@@ -19,9 +19,9 @@ function sorting(source, target) {
   savedList[source] = savedList[targetIndex];
   savedList[targetIndex] = sourceObj;
   localStorage.setItem('savedList', JSON.stringify(savedList));
-}
+};
 
-export default function dragAndDrop(event, index) {
+const dragAndDrop = (event, index) => {
   const newEvent = event.type;
   const source = index;
   switch (newEvent) {
@@ -40,4 +40,5 @@ export default function dragAndDrop(event, index) {
     default:
       break;
   }
-}
+};
+export default dragAndDrop;

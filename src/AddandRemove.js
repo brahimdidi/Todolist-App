@@ -113,14 +113,14 @@ class TaskList {
 
 const newList = new TaskList();
 
-export default function addTask(v) {
+const addTask = (v) => {
   newList.addTask({
     description: v,
     completed: false,
     index: newList.addIndex(),
   });
   newList.displayAllTask();
-}
+};
 
 document.getElementById('clear-all-task').addEventListener('click', () => {
   newList.clearList();
@@ -129,3 +129,4 @@ document.getElementById('clear-all-task').addEventListener('click', () => {
 window.addEventListener('load', () => {
   newList.displayAllTask();
 });
+export default addTask;
