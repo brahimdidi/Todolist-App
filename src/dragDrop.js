@@ -1,38 +1,44 @@
-let current = null;
-let targetItem = null;
+let target;
 
-export function dragStart() {
-  current = this;
-  current.classList.add('current-active');
-}
+const sorting = (source, target) => {
+  const savedList = JSON.parse(localStorage.getItem('savedList'));
+  if (savedList.length < 2) return;
 
-export function dragEnd() {
-  current.classList.remove('current-active');
-  current = null;
-}
+  const sourceObj = savedList[source];
+  const souceIndex = savedList[source].index;
+  let targetIndex;
+  savedList.forEach((obj) => {
+    if (obj.index === Number(target)) {
+      targetIndex = savedList.indexOf(obj);
+    }
+  });
 
-export function dragEnter(event) {
-  event.preventDefault();
-}
+  savedList[source].index = savedList[targetIndex].index;
+  savedList[targetIndex].index = souceIndex;
 
-export function dragLeave() {
-  targetItem = null;
-}
+  savedList[source] = savedList[targetIndex];
+  savedList[targetIndex] = sourceObj;
+  localStorage.setItem('savedList', JSON.stringify(savedList));
+};
 
-export function allowDrop(event) {
-  event.preventDefault();
-}
-
-export function drop(event) {
-  event.preventDefault();
-  targetItem = document.getElementById(event.target.id);
-  current.parentElement.insertBefore(current, targetItem);
-
-  const children = Array.from(current.parentElement.children);
-  const updatedList = children.map((el, index) => ({
-    index,
-    completed: el.checked,
-    description: el.children[1].value,
-  }));
-  localStorage.setItem('TodoList', JSON.stringify(updatedList));
-}
+const dragAndDrop = (event, index) => {
+  const newEvent = event.type;
+  const source = index;
+  switch (newEvent) {
+    case 'dragstart':
+      event.target.classList.add('dragging');
+      break;
+    case 'dragend':
+      event.target.classList.remove('dragging');
+      sorting(source, target);
+      break;
+    case 'dragover':
+      if (event.target.className === 'list-item') {
+        target = event.target.children[2].innerHTML;
+      }
+      break;
+    default:
+      break;
+  }
+};
+export default dragAndDrop;

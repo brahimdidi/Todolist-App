@@ -1,8 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+## Brahim Todo list project
+> To do list project, 
 
-> To do list project,In this project you can save you wishing to do list.
+In this project you can save you wishing to do list.
+we will use webpack to bundle javascript and create the
+dynamic website with many functions
 
 ![screenshot](projectImage.jpeg)
 
@@ -35,10 +39,13 @@ none
 ### Install
 clone the repo, open it with your code editor 
 suggested vscode browse the web.
+you can install webpack and run npm run build to generate the code
+and you are ready
 
 ### Usage
 
 ### Run tests
+no needs
 
 ### Deployment
 
